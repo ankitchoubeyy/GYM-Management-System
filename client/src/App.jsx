@@ -11,8 +11,9 @@ import Footer from "./components/Footer ";
 
 const App = () => {
   return (
-    <div className="">
+    <>
       <Navbar />
+      <div className="min-h-screen">
       <Routes className="min-h-screen">
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -21,8 +22,9 @@ const App = () => {
         <Route path="/login" element={<Login />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
+      </div>
       <Footer />
-    </div>
+    </>
   );
 };
 

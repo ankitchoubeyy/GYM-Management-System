@@ -10,8 +10,8 @@ const stats = [
 const StatsSection = () => {
   return (
     <div className="flex justify-between items-center mt-10">
-      {stats.map((stat) => (
-        <div className="text-center">
+      {stats.map((stat, index) => (
+        <div key={index} className="text-center">
           <h1 className="text-3xl font-bold mb-1">{stat.value}</h1>
           <p className="text-lg ">{stat.title}</p>
         </div>

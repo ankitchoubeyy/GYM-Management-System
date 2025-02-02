@@ -23,8 +23,8 @@ const Navbar = () => {
       {/* ----------------- Menu Items for Desktop ----------------  */}
       <div className="hidden md:flex items-center gap-6 ">
         <ul className="flex w-full gap-6">
-          {menuItems.map((item) => (
-            <li className="px-3 sm:text-sm md:text-md lg:text-xl  hover:text-secondary transition duration-500  font-medium"><Link to={item.link}>{item.title}</Link></li>
+          {menuItems.map((item, index) => (
+            <li key={index} className="px-3 sm:text-sm md:text-md lg:text-xl  hover:text-secondary transition duration-500  font-medium"><Link to={item.link}>{item.title}</Link></li>
           ))}
         </ul>
           {/* ----------------- Call to Action ----------------  */}
@@ -39,8 +39,8 @@ const Navbar = () => {
         <RxCross1 onClick={() => setOpen(!open)} className="text-3xl absolute top-8 right-4 text-secondary cursor-pointer" />
 
         <ul className="flex flex-col  gap-6">
-          {menuItems.map((item) => (
-            <li className="px-3 font-bold  text-secondary hover:text-primary transition duration-500"><Link to={item.link}>{item.title}</Link></li>
+          {menuItems.map((item, index) => (
+            <li key={index} className="px-3 font-bold  text-secondary hover:text-primary transition duration-500"><Link to={item.link}>{item.title}</Link></li>
           ))}
         </ul>
           {/* ----------------- Call to Action ----------------  */}
