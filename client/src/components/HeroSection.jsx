@@ -8,6 +8,7 @@ const HeroSection = () => {
   return (
     <div className="px-6 sm:px-10 md:px-14 lg:px-18  min-h-[90vh] bg-gradient-to-r from-rose-100 to-teal-100">
       <div className="flex justify-between items-center">
+        {/* ------------- Left side box ------------- */}
         <div className="w-[40vw]">
           <div>
             <h1 className="font-bold font-display text-xl sm:text-2xl md:text-4xl lg:text-5xl leading-16 my-5">
@@ -15,8 +16,8 @@ const HeroSection = () => {
               <span className="text-secondary">FITNESS GAME</span>
             </h1>
             <p className="text-base text-gray-700 mb-10">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam omnis
-              nihil ipsum sed consectetur atque tenetur voluptatum placeat
+              Get ready to sweat it out and achieve your fitness goals with our
+              high-energy fitness classes!
             </p>
           </div>
           <div>
@@ -29,12 +30,15 @@ const HeroSection = () => {
             </div>
           </div>
         </div>
+        {/* ------------- Right side box ------------- */}
         <div className="w-[60vw]">
           <img src={heroImg} alt="hero-img" />
         </div>
-        
       </div>
-      <div><StatsSection /></div>
+      {/* ------------- Stats ------------- */}
+      <div className="pb-10">
+        <StatsSection />
+      </div>
     </div>
   );
 };

@@ -7,12 +7,13 @@ import NotFound from "./pages/NotFound";
 import Navbar from "./components/Navbar";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
+import Footer from "./components/Footer ";
 
 const App = () => {
   return (
     <div className="">
       <Navbar />
-      <Routes>
+      <Routes className="min-h-screen">
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
@@ -20,6 +21,7 @@ const App = () => {
         <Route path="/login" element={<Login />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
+      <Footer />
     </div>
   );
 };

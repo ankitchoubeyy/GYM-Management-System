@@ -4,7 +4,7 @@ import StatsSection from '../components/StatsSection'
 
 const Home = () => {
   return (
-    <div>
+    <div >
       <HeroSection />
       
     </div>
