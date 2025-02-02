@@ -3,6 +3,7 @@ import logo from "../assets/logo.png";
 import { Link } from "react-router-dom";
 import { CiMenuFries } from "react-icons/ci";
 import { RxCross1 } from "react-icons/rx";
+import { MyButton } from "./MyButton";
 
 const menuItems = [
   { title: "Home", link: "/" },
@@ -13,7 +14,7 @@ const menuItems = [
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   return (
-    <nav className="flex justify-between items-center px-6 sm:px-10 md:px-14 lg:px-18 py-2 shadow-md">
+    <nav className="flex justify-between items-center px-6 sm:px-10 md:px-14 lg:px-18 py-2 shadow-lg">
       {/* ----------------- Logo and Title ----------------  */}
       <div className="flex items-center">
         <img src={logo} className="h-15" alt="logo" />
@@ -27,9 +28,7 @@ const Navbar = () => {
           ))}
         </ul>
           {/* ----------------- Call to Action ----------------  */}
-        <button className="px-4 sm:px-6 md:px-8 lg:px-10 py-2 bg-secondary hover:bg-primary transition duration-500 text-white rounded-full w-full  ">
-          <Link to="/register" className="">Join Us</Link>
-        </button>
+        <MyButton title="Join Us" route="register" width={"full"} />
       </div>
 
       {/* ----------------- Menu Items for Mobile ----------------  */}
