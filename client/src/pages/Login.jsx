@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import "./Register.css"; // Assuming you are using the same CSS for styling
 
 const Login = () => {
   const [formData, setFormData] = useState({
@@ -37,9 +36,9 @@ const Login = () => {
   };
 
   return (
-    <div className="min-h-screen background-image flex items-center justify-start pl-30">
-      <div className="bg-white p-8 rounded-lg shadow-lg w-[40vw] ">
-        <h1 className="text-2xl font-bold mb-4 text-secondary text-center">
+    <div className="min-h-screen bg-gradient-to-r from-rose-100 to-teal-100 flex items-center justify-center p-4 sm:p-6 md:p-8">
+      <div className="bg-white p-6 sm:p-8 rounded-lg shadow-lg w-full max-w-md">
+        <h1 className="text-2xl font-bold mb-4 text-teal-500 text-center">
           Login
         </h1>
         <form onSubmit={handleSubmit} className="space-y-4">
@@ -50,7 +49,7 @@ const Login = () => {
               name="email"
               value={formData.email}
               onChange={handleChange}
-              className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:border-primary"
+              className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:border-teal-500"
             />
             {errors.email && (
               <div className="text-red-500 text-sm mt-1">{errors.email}</div>
@@ -63,7 +62,7 @@ const Login = () => {
               name="password"
               value={formData.password}
               onChange={handleChange}
-              className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:border-primary"
+              className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:border-teal-500"
             />
             {errors.password && (
               <div className="text-red-500 text-sm mt-1">{errors.password}</div>
@@ -71,7 +70,7 @@ const Login = () => {
           </div>
           <button
             type="submit"
-            className="w-full bg-secondary text-white py-2 rounded-lg hover:bg-primary transition duration-700 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50"
+            className="w-full bg-teal-500 cursor-pointer text-white py-2 rounded-lg hover:bg-primary transition duration-700 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50"
           >
             Login
           </button>

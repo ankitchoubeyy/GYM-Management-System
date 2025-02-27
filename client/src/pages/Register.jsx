@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import "./Register.css";
 
 const RegisterForm = () => {
   const [formData, setFormData] = useState({
@@ -44,9 +43,9 @@ const RegisterForm = () => {
   };
 
   return (
-    <div className="min-h-screen background-image flex items-center justify-start pl-30">
-      <div className="bg-white p-8 rounded-lg shadow-lg w-[40vw] ">
-        <h1 className="text-2xl font-bold mb-4 text-secondary text-center">
+    <div className="min-h-screen bg-gradient-to-r from-rose-100 to-teal-100 flex items-center justify-center p-4 sm:p-6 md:p-8">
+      <div className="bg-white p-6 sm:p-8 rounded-lg shadow-lg w-full max-w-md">
+        <h1 className="text-2xl font-bold mb-4 text-teal-500 text-center">
           Register
         </h1>
         <form onSubmit={handleSubmit} className="space-y-4">
@@ -57,7 +56,7 @@ const RegisterForm = () => {
               name="name"
               value={formData.name}
               onChange={handleChange}
-              className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:border-primary"
+              className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:border-teal-500"
             />
             {errors.name && (
               <div className="text-red-500 text-sm mt-1">{errors.name}</div>
@@ -70,7 +69,7 @@ const RegisterForm = () => {
               name="email"
               value={formData.email}
               onChange={handleChange}
-              className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:border-primary"
+              className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:border-teal-500"
             />
             {errors.email && (
               <div className="text-red-500 text-sm mt-1">{errors.email}</div>
@@ -83,7 +82,7 @@ const RegisterForm = () => {
               name="password"
               value={formData.password}
               onChange={handleChange}
-              className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:border-primary"
+              className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:border-teal-500"
             />
             {errors.password && (
               <div className="text-red-500 text-sm mt-1">{errors.password}</div>
@@ -96,7 +95,7 @@ const RegisterForm = () => {
               name="confirmPassword"
               value={formData.confirmPassword}
               onChange={handleChange}
-              className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:border-primary"
+              className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:border-teal-500"
             />
             {errors.confirmPassword && (
               <div className="text-red-500 text-sm mt-1">
@@ -106,13 +105,13 @@ const RegisterForm = () => {
           </div>
           <button
             type="submit"
-            className="w-full bg-secondary text-white py-2 rounded-lg hover:bg-primary transition duration-700 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50"
+            className="w-full bg-teal-500 text-white py-2 rounded-lg hover:bg-teal-600 hover:cursor-pointer transition duration-700 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50"
           >
             Register
           </button>
           <div className="text-center">
             Already have an account?{" "}
-            <Link to="/login" className="text-primary hover:underline">
+            <Link to="/login" className="text-teal-500 hover:underline">
               Login
             </Link>
           </div>

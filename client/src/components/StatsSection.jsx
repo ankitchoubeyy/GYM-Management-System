@@ -9,11 +9,14 @@ const stats = [
 
 const StatsSection = () => {
   return (
-    <div className="flex justify-between items-center mt-10">
-      {stats.map((stat, index) => (
-        <div key={index} className="text-center">
-          <h1 className="text-3xl font-bold mb-1">{stat.value}</h1>
-          <p className="text-lg ">{stat.title}</p>
+    <div className="flex flex-wrap justify-center gap-4 md:gap-8 lg:gap-12 mt-10">
+      {stats.map((stat) => (
+        <div
+          key={stat.id}
+          className="text-center bg-white p-4 rounded-lg shadow-md w-[45%] sm:w-[30%] md:w-auto md:flex-1"
+        >
+          <h1 className="text-xl md:text-3xl font-bold mb-1">{stat.value}</h1>
+          <p className="text-sm md:text-lg text-gray-600">{stat.title}</p>
         </div>
       ))}
     </div>

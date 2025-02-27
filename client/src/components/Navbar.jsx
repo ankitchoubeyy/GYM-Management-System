@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logo from "../assets/logo.png";
+import logo from "../assets/logo.jpg";
 import { Link } from "react-router-dom";
 import { CiMenuFries } from "react-icons/ci";
 import { RxCross1 } from "react-icons/rx";
@@ -16,15 +16,15 @@ const Navbar = () => {
   return (
     <nav className="flex justify-between items-center px-6 sm:px-10 md:px-14 lg:px-18 py-2 shadow-lg">
       {/* ----------------- Logo and Title ----------------  */}
-      <div className="flex items-center">
+      <Link to={"/"} className="flex items-center">
         <img src={logo} className="h-15" alt="logo" />
-        <h1 className="font-bold font-display text-md sm:text-lg md:text-xl lg:text-2xl text-secondary ml-3">UFC GYM</h1>
-      </div>
+        <h1 className="font-bold font-display text-md sm:text-lg md:text-xl lg:text-2xl text-teal-500 uppercase">MH Fitness</h1>
+      </Link>
       {/* ----------------- Menu Items for Desktop ----------------  */}
       <div className="hidden md:flex items-center gap-6 ">
         <ul className="flex w-full gap-6">
           {menuItems.map((item, index) => (
-            <li key={index} className="px-3 sm:text-sm md:text-md lg:text-xl  hover:text-secondary transition duration-500  font-medium"><Link to={item.link}>{item.title}</Link></li>
+            <li key={index} className="px-3 sm:text-sm md:text-md lg:text-xl  hover:text-teal-600 transition duration-500  font-medium"><Link to={item.link}>{item.title}</Link></li>
           ))}
         </ul>
           {/* ----------------- Call to Action ----------------  */}
@@ -33,14 +33,14 @@ const Navbar = () => {
 
       {/* ----------------- Menu Items for Mobile ----------------  */}
       <div className="md:hidden flex">
-        <CiMenuFries onClick={() => setOpen(!open)} className="text-3xl text-secondary cursor-pointer" />
+        <CiMenuFries onClick={() => setOpen(!open)} className="text-3xl text-teal-500 cursor-pointer" />
 
         <div className={`${open ? "translate-y-0" : "-translate-x-full"} absolute top-0 left-0 w-full h-screen bg-white flex flex-col justify-center gap-12 items-center transition-all duration-300 `}>
         <RxCross1 onClick={() => setOpen(!open)} className="text-3xl absolute top-8 right-4 text-secondary cursor-pointer" />
 
         <ul className="flex flex-col  gap-6">
           {menuItems.map((item, index) => (
-            <li key={index} className="px-3 font-bold  text-secondary hover:text-primary transition duration-500"><Link to={item.link}>{item.title}</Link></li>
+            <li key={index} className="px-3 font-bold  text-teal-500 hover:text-teal-600 transition duration-500"><Link to={item.link}>{item.title}</Link></li>
           ))}
         </ul>
           {/* ----------------- Call to Action ----------------  */}

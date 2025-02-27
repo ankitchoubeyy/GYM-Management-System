@@ -47,7 +47,7 @@ const faqs = [
 
 const Faqs = () => {
   return (
-    <div className="px-6 sm:px-10 md:px-14 lg:px-18 py-4 bg-sky-100">
+    <div className="px-6 sm:px-10 md:px-14 lg:px-18 py-4 bg-gradient-to-r from-rose-100 to-teal-100">
         <Heading heading={"FAQs"} />
       {faqs.map((faq, index) => (
         <div className="my-4 rounded-full">
