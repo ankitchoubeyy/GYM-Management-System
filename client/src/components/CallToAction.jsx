@@ -4,7 +4,7 @@ const CallToAction = () => {
   return (
     <div className="py-16 bg-gradient-to-r from-rose-100 to-teal-100">
       <div className="max-w-4xl mx-auto px-6 sm:px-10 md:px-14 lg:px-18 text-center">
-        <h2 className="text-4xl font-bold mb-6">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6">
           Ready to Transform Your Life?
         </h2>
         <p className="text-lg text-zinc-700 mb-8">

@@ -36,16 +36,16 @@ const Navbar = () => {
         <CiMenuFries onClick={() => setOpen(!open)} className="text-3xl text-teal-500 cursor-pointer" />
 
         <div className={`${open ? "translate-y-0" : "-translate-x-full"} absolute top-0 left-0 w-full h-screen bg-white flex flex-col justify-center gap-12 items-center transition-all duration-300 `}>
-        <RxCross1 onClick={() => setOpen(!open)} className="text-3xl absolute top-8 right-4 text-secondary cursor-pointer" />
+        <RxCross1 onClick={() => setOpen(!open)} className="text-3xl absolute top-8 right-4 text-teal-500 cursor-pointer" />
 
         <ul className="flex flex-col  gap-6">
           {menuItems.map((item, index) => (
-            <li key={index} className="px-3 font-bold  text-teal-500 hover:text-teal-600 transition duration-500"><Link to={item.link}>{item.title}</Link></li>
+            <li onClick={() => setOpen(!open)} key={index} className="px-3 font-bold  text-teal-500 hover:text-teal-600 transition duration-500"><Link to={item.link}>{item.title}</Link></li>
           ))}
         </ul>
           {/* ----------------- Call to Action ----------------  */}
-        <button className="px-4 sm:px-6 md:px-8 lg:px-10 py-2 bg-secondary hover:bg-primary transition duration-500 text-white rounded-full w-[70%]  ">
-          <Link to="/" className="">Join Us</Link>
+        <button className="px-4 sm:px-6 md:px-8 lg:px-10 py-2 bg-teal-500 hover:bg-teal-600 transition duration-500 text-white rounded-full w-[70%]  ">
+          <Link to="/register" className="" onClick={() => setOpen(!open)}>Join Us</Link>
         </button>
         </div>
           

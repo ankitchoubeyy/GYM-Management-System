@@ -116,7 +116,7 @@ const ContactPage = () => {
 
         {/* Gym Location Map */}
         <div className="mt-16 bg-white p-8 rounded-lg shadow-lg">
-          <h2 className="text-3xl font-semibold mb-6">Find Us on the Map</h2>
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-6">Find Us on the Map</h2>
           <div className="h-96 rounded-lg overflow-hidden">
             <iframe
               title="Gym Location"

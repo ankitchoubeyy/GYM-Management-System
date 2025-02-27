@@ -11,7 +11,7 @@ const faqs = [
   {
     id: 1,
     question: "What are your opening hours?",
-    answer: "UFC GYM is open 24/7 to accommodate all schedules.",
+    answer: "MH FITNESS Center is open Mon to accommodate all schedules.",
   },
   {
     id: 2,

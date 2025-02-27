@@ -10,7 +10,7 @@ const testimonialData = [
   {
     name: "Akshay Tripathi",
     review: "MH FITNESS has transformed my life! The trainers are amazing, and the facilities are top-notch.",
-    image: "https://cdn.pixabay.com/photo/2024/02/15/16/40/teacher-8575733_640.png"
+    image: "https://scontent.fdel76-1.fna.fbcdn.net/v/t39.30808-6/427994825_18301447375145837_8579348345335995894_n.jpg?stp=dst-jpegr_tt6&_nc_cat=102&ccb=1-7&_nc_sid=127cfc&_nc_ohc=onWGUSDAj6MQ7kNvgGshONg&_nc_oc=AdicUyzDnih2Wz00T2-Nr5FmYjG0JZJklO0bgsngDFenpIMwh1ZGbgZR6U5BNFk7vHk&_nc_zt=23&se=-1&_nc_ht=scontent.fdel76-1.fna&_nc_gid=A6q0GACDEzWr4tkeyUmmjPJ&oh=00_AYASQ1dbqT0H1bte1bK8WQPCdvEug8mlgj0VJVAcgK0z9A&oe=67C65B4E"
   },
   {
     name: "Ankit Choubey",
@@ -18,9 +18,9 @@ const testimonialData = [
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvQPREvPprCnFOjFEO-j9-3P1xM-ipMus1hQ&s"
   },
   {
-    name: "John Doe",
+    name: "Kishan Singh",
     review: "The best decision I made was joining this GYM. The results speak for themselves!",
-    image: "https://cdn.pixabay.com/photo/2021/01/04/06/19/woman-5886559_1280.jpg"
+    image: "https://scontent.fdel76-1.fna.fbcdn.net/v/t39.30808-6/466347333_2566749020198218_5484022231164465339_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=e4RdzmWbBdEQ7kNvgHhLjfT&_nc_oc=Adg8qKVQ-LYMkz7nNBsxCopEIpV_eBhfJOddbqzftAji36YQhPQZN7twINrHcBgxgQk&_nc_zt=23&_nc_ht=scontent.fdel76-1.fna&_nc_gid=AxeZXueIti4RHeVGT971Smz&oh=00_AYB664HWCzctMBX1DfgM9FynhbmXjSrznyZsh_CZR22tkg&oe=67C65DF5"
   },
 ];
 
@@ -58,7 +58,7 @@ const Home = () => {
       <HeroSection />
 
       {/* Features Section */}
-      <div className="py-16 bg-gradient-to-r from-rose-100 to-teal-100">
+      <div className="pt-4 pb-16 bg-gradient-to-r from-rose-100 to-teal-100">
         <div className="max-w-6xl mx-auto px-6 sm:px-10 md:px-14 lg:px-18">
           <h2 className="text-4xl font-bold text-center mb-8">Why Choose Us?</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -96,7 +96,7 @@ const Home = () => {
       {/* Testimonials Section */}
       <div className="py-16 bg-white">
         <div className="max-w-6xl mx-auto px-6 sm:px-10 md:px-14 lg:px-18">
-          <h2 className="text-4xl font-bold text-center mb-8">What Our Members Say</h2>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-8">What Our Members Say</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Testimonials */}
             {
@@ -114,7 +114,7 @@ const Home = () => {
       {/* Blog/News Section (Optional) */}
       <div className="py-16 bg-white">
         <div className="max-w-6xl mx-auto px-6 sm:px-10 md:px-14 lg:px-18">
-          <h2 className="text-4xl font-bold text-center mb-8">Latest News</h2>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-8">Latest News</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Blog Post 1 */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">

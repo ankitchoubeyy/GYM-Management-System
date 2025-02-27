@@ -14,7 +14,7 @@ const About = () => {
 
       {/* -------------- image ------------  */}
       <img
-        className="mx-auto mt-10 h-76 max-w-5xl object-cover rounded-lg shadow-md"
+        className="mx-auto mt-10 h-76 w-full md:max-w-5xl object-cover rounded-lg shadow-md"
         src={AboutImg}
         alt="about img"
       />
